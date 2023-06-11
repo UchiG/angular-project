@@ -15,4 +15,4 @@
   <img width="300" (click)="onLogoClicked()" src="data" alt="Angular logo">
 </div>
 
-<input class="demo" [value]="data.title">
+<input class="demo" (keyup)="onKeyUp(titleInput.value)" [value]="data.title" #titleInput>

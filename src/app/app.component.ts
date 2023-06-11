@@ -13,4 +13,9 @@ export class AppComponent {
   onLogoClicked() {
     alert('Logo clicked');
   }
+
+  onKeyUp(newTitle: string) {
+    this.data.title = newTitle;
+  }
 }
+
