@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import {COURSES} from '../db-data';
+import {Course} from './model/course';
 
 @Component({
   selector: 'app-root',
@@ -6,16 +8,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  data = { 
-    title: 'angular-course',
-  };
 
-  onLogoClicked() {
-    alert('Logo clicked');
-  }
+    courses = COURSES;
 
-  onKeyUp(newTitle: string) {
-    this.data.title = newTitle;
-  }
+    onCourseSelected(course:Course) {
+      console.log("app component - click event bubbled...", course);
+    }
+
 }
-
