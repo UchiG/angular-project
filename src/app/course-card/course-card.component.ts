@@ -12,13 +12,19 @@ export class CourseCardComponent implements OnInit {
     @Input()
     course: Course;
 
+    @Input()
+    cardIndex: number;
+
     @Output()
     courseSelected = new EventEmitter<Course>();
   
     constructor() { }
   
     ngOnInit(): void {
+    }
 
+    IsImageVisible() {
+      return this.course && this.course.iconUrl;
     }
 
     onCourseViewed() {
