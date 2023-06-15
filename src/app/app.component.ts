@@ -11,6 +11,10 @@ export class AppComponent {
 
     courses = COURSES;
 
+    title = COURSES[0].description;
+
+    startDate = new Date(2000, 0, 1);
+
     onCourseSelected(course:Course) {
       console.log("app component - click event bubbled...", course);
     }
