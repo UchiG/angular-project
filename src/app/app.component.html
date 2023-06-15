@@ -11,11 +11,21 @@
     <div>
       {{title | titlecase}}
     </div>
+    <div>
+      {{price | currency: "EUR":true}}
+    </div>
+    <div>
+      {{rate | percent}}
+    </div>
+  </div>
+  
+  <div *ngFor="let pair of course | keyvalue">
+      {{ pair.key + ': ' + pair.value }}
   </div>
   
   <div class="courses">
     <course-card
-      *ngFor="let course of courses; index as i; first as isFirst; last as isLast"
+      *ngFor="let course of courses | slice:0:2; index as i; first as isFirst; last as isLast"
       [class.is-first]="isFirst"
       [class.is-last]="isLast"
       (courseSelected)="onCourseSelected($event)"
