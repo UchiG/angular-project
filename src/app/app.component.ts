@@ -26,6 +26,8 @@ export class AppComponent implements AfterViewInit {
   ngAfterViewInit() {
     console.log("containerDiv", this.containerDiv);
 
+    this.courses[0].description = "test";
+
   }
 
     onCourseSelected(course:Course) {
