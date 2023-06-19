@@ -13,14 +13,14 @@ export class AppComponent implements AfterViewInit {
 
     courses = COURSES;
 
-    @ViewChild('cardRef1')
+    @ViewChild('cardRef1', {read: ElementRef})
     card: CourseCardComponent;
 
-  @ViewChild('container')
-  containerDiv: ElementRef;
+  @ViewChild('courseImage')
+  courseImage: ElementRef;
 
   constructor() {
-    console.log("containerDiv", this.containerDiv);
+
   }
 
   ngAfterViewInit() {
@@ -31,7 +31,6 @@ export class AppComponent implements AfterViewInit {
   }
 
     onCourseSelected(course:Course) {
-      console.log("containerDiv", this.containerDiv);
 
     }
 }
