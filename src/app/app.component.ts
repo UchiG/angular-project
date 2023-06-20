@@ -13,8 +13,6 @@ export class AppComponent implements AfterViewInit {
 
     courses = COURSES;
 
-
-
   constructor() {
 
   }
