@@ -16,8 +16,7 @@ export class AppComponent implements AfterViewInit {
     @ViewChild('cardRef1', {read: ElementRef})
     card: CourseCardComponent;
 
-  @ViewChild('courseImage')
-  courseImage: ElementRef;
+
 
   constructor() {
 
