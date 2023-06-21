@@ -13,6 +13,9 @@ export class AppComponent implements AfterViewInit {
 
     courses = COURSES;
 
+  @viewChildren(CourseCardComponent)
+  cards;
+
   constructor() {
 
   }
