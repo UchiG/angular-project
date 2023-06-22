@@ -1,8 +1,7 @@
-import { Component, ViewChild, ElementRef, QueryList, ViewChildren} from '@angular/core';
+import { Component, ViewChild, AfterViewInit, ElementRef, QueryList, ViewChildren} from '@angular/core';
 import { COURSES } from '../db-data';
 import { Course } from './model/course';
 import { CourseCardComponent } from './course-card/course-card.component';
-import { AfterViewInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
