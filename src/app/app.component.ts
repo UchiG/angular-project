@@ -1,4 +1,4 @@
-import { Component, ViewChild, ElementRef } from '@angular/core';
+import { Component, ViewChild, ElementRef, QueryList } from '@angular/core';
 import { COURSES } from '../db-data';
 import { Course } from './model/course';
 import { CourseCardComponent } from './course-card/course-card.component';
@@ -14,7 +14,7 @@ export class AppComponent implements AfterViewInit {
     courses = COURSES;
 
   @viewChildren(CourseCardComponent)
-  cards;
+  cards: QueryList<CourseCardComponent>;
 
   constructor() {
 
