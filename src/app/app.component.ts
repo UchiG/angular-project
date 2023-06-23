@@ -12,7 +12,7 @@ export class AppComponent implements AfterViewInit {
 
     courses = COURSES;
 
-  @ViewChildren(CourseCardComponent)
+  @ViewChildren(CourseCardComponent, {read: ElementRef})
   cards: QueryList<CourseCardComponent>;
 
   constructor() {
