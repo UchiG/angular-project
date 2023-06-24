@@ -20,6 +20,7 @@ export class AppComponent implements AfterViewInit {
   }
 
   ngAfterViewInit() {
+    console.log(this.cards);
 
   }
 
