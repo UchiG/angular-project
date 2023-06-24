@@ -13,7 +13,7 @@ export class AppComponent implements AfterViewInit {
     courses = COURSES;
 
   @ViewChildren(CourseCardComponent, {read: ElementRef})
-  cards: QueryList<CourseCardComponent>;
+  cards: QueryList<ElementRef>;
 
   constructor() {
 
