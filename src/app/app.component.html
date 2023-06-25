@@ -5,10 +5,10 @@
 <div>
 
 
-<div class="courses" #container>
+<div class="courses" #container ngIf="course[0] as course">
   <course-card #cardRef1
     (courseSelected)="onCourseSelected($event)"
-    [course]="courses[0]"
+    [course]="courses"
   ></course-card>
 
 </div>
