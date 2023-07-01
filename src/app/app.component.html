@@ -4,10 +4,20 @@
 <div class="courses" #container ngIf="course[0] as course">
   <course-card #cardRef1
     (courseSelected)="onCourseSelected($event)"
-    [course]="courses"
+    [course]="courses[0]"
   >
   <img width="300" alt="Angular Logo"
   [src]="course.iconUrl">
+
+
+</course-card>
+
+<course-card #cardRef1
+(courseSelected)="onCourseSelected($event)"
+[course]="courses[1]"
+>
+<img width="300" alt="Angular Logo"
+[src]="course.iconUrl">
 
 
 </course-card>
