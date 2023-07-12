@@ -29,7 +29,6 @@ export class CourseCardComponent implements OnInit, AfterViewInit {
     }
 
     onCourseViewed() {
-      console.log("card component - button clicked...") 
       this.courseSelected.emit(this.course);
     }
 
