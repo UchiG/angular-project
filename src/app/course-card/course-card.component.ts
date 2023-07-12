@@ -1,4 +1,4 @@
-import { Component, Input, Output, OnInit, EventEmitter } from '@angular/core';
+import { Component, Input, Output, OnInit, EventEmitter, AfterViewInit } from '@angular/core';
 import { COURSES } from '../../db-data';
 import { Course } from '../model/course';
 
@@ -7,7 +7,7 @@ import { Course } from '../model/course';
   templateUrl: './course-card.component.html',
   styleUrls: ['./course-card.component.css']
 })
-export class CourseCardComponent implements OnInit {
+export class CourseCardComponent implements OnInit, AfterViewInit {
       
     @Input()
     course: Course;
@@ -21,6 +21,7 @@ export class CourseCardComponent implements OnInit {
     constructor() { }
   
     ngOnInit(): void {
+
     }
 
     IsImageVisible() {
