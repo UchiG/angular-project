@@ -1,6 +1,4 @@
- 
-
-export const COURSES: any = [
+ export const COURSES: any = [
 
     {
         id: 1,
